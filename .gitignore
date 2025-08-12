@@ -95,3 +95,4 @@ dkms.conf
 /scan.py
 /build/
 /cmake-build-cli/
+/.cache
