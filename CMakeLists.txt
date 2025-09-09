@@ -24,3 +24,6 @@ add_executable("DSA-Sorting-1" "DSE2131-DSA_Lab/Lab4-Sorting/Lab4-Sorting-1.c")
 add_executable("DSA-Sorting-2" "DSE2131-DSA_Lab/Lab4-Sorting/Lab4-Sorting-2.c")
 add_executable("DSA-Sorting-3" "DSE2131-DSA_Lab/Lab4-Sorting/Lab4-Sorting-3.c")
 add_executable("DSA-Sorting-4" "DSE2131-DSA_Lab/Lab4-Sorting/Lab4-Sorting-4.c")
+
+add_executable("DSA-Queue-Array-1" "DSE2131-DSA_Lab/Lab9-Queue/Part 1-Using Array/Lab9-Queue-Using Array-1.c")
+add_executable("DSA-Queue-Array-2" "DSE2131-DSA_Lab/Lab9-Queue/Part 1-Using Array/Lab9-Queue-Using Array-2.c")
