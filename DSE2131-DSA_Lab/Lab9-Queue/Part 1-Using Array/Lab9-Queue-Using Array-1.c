@@ -117,43 +117,43 @@ int main(void) {
     int front = 0, back = 0;
     bool ok = queueFront(&q, &front) && queueBack(&q, &back);
     if (result && ok && queueLen(&q) == 1 && front == 10 && back == 10) {
-        printf("Test 1 - Enq 10: %s\n", "PASSED");
+        printf("Test 1 - Enq 10: PASSED\n");
     } else {
-        printf("Test 1 - Enq 10: %s\n", "FAILED");
+        printf("Test 1 - Enq 10: FAILED\n");
     }
 
     // Test 2: Enqueue another element
     result = enqueue(&q, 20);
     ok = queueFront(&q, &front) && queueBack(&q, &back);
     if (result && ok && queueLen(&q) == 2 && front == 10 && back == 20) {
-        printf("Test 2 - Enq 20: %s\n", "PASSED");
+        printf("Test 2 - Enq 20: PASSED\n");
     } else {
-        printf("Test 2 - Enq 20: %s\n", "FAILED");
+        printf("Test 2 - Enq 20: FAILED\n");
     }
 
     // Test 3: Dequeue the first element
     int val = dequeue(&q);
     ok = queueFront(&q, &front);
     if (val == 10 && queueLen(&q) == 1 && ok && front == 20) {
-        printf("Test 3 - Deq: %s\n", "PASSED");
+        printf("Test 3 - Deq: PASSED\n");
     } else {
-        printf("Test 3 - Deq: %s\n", "FAILED");
+        printf("Test 3 - Deq: FAILED\n");
     }
 
     // Test 4: Dequeue again
     val = dequeue(&q);
     if (val == 20 && queueLen(&q) == 0) {
-        printf("Test 4 - Deq: %s\n", "PASSED");
+        printf("Test 4 - Deq: PASSED\n");
     } else {
-        printf("Test 4 - Deq: %s\n", "FAILED");
+        printf("Test 4 - Deq: FAILED\n");
     }
 
     // Test 5: Dequeue from empty queue
     val = dequeue(&q);
     if (val == 0 && queueLen(&q) == 0) {
-        printf("Test 5 - Deq empty: %s\n", "PASSED");
+        printf("Test 5 - Deq empty: PASSED\n");
     } else {
-        printf("Test 5 - Deq empty: %s\n", "FAILED");
+        printf("Test 5 - Deq empty: FAILED\n");
     }
 
     // Test 6: growth + wrap-around behavior
@@ -171,9 +171,9 @@ int main(void) {
         if (got != expected[i]) { orderOK = false; break; }
     }
     if (all && orderOK && queueLen(&q) == 0) {
-        printf("Test 6 - Wrap & order: %s\n", "PASSED");
+        printf("Test 6 - Wrap & order: PASSED\n");
     } else {
-        printf("Test 6 - Wrap & order: %s\n", "FAILED");
+        printf("Test 6 - Wrap & order: FAILED\n");
     }
 
     // Test 7: Shrink check (not strictly asserted)
@@ -182,9 +182,9 @@ int main(void) {
     for (int i = 0; i < 60; ++i) (void)dequeue(&q);
     const size_t capAfter = q.cap;
     if (capAfter <= capBefore / 2) {
-        printf("Test 7 - Shrink (cap %zu -> %zu): %s\n", capBefore, capAfter, "PASSED");
+        printf("Test 7 - Shrink (cap %zu -> %zu): PASSED\n", capBefore, capAfter);
     } else {
-        printf("Test 7 - Shrink (cap %zu -> %zu): %s\n", capBefore, capAfter, "OK");
+        printf("Test 7 - Shrink (cap %zu -> %zu): OK\n", capBefore, capAfter);
     }
 
     queueFree(&q);
