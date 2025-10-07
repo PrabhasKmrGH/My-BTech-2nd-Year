@@ -27,3 +27,10 @@ add_executable("DSA-Sorting-4" "DSE2131-DSA_Lab/Lab4-Sorting/Lab4-Sorting-4.c")
 
 add_executable("DSA-Queue-Array-1" "DSE2131-DSA_Lab/Lab9-Queue/Part 1-Using Array/Lab9-Queue-Using Array-1.c")
 add_executable("DSA-Queue-Array-2" "DSE2131-DSA_Lab/Lab9-Queue/Part 1-Using Array/Lab9-Queue-Using Array-2.c")
+
+add_executable("Linked-List" "DSE2131-DSA_Lab/Lab5-Linked List/Lab5-Linked List.c")
+
+add_executable("DSA-Stack-Part2" "DSE2131-DSA_Lab/Lab7-Stack-Part2/Lab7-Stack-Part2.c")
+
+add_executable("DSA-Queue-Array-Part2-1" "DSE2131-DSA_Lab/Lab9-Queue/Part 2-Using Linked List/Lab9-Queue-Using Linked List-1.c")
+add_executable("DSA-Queue-Array-Part2-2" "DSE2131-DSA_Lab/Lab9-Queue/Part 2-Using Linked List/Lab9-Queue-Using Linked List-2.c")
