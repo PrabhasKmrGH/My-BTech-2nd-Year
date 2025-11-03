@@ -1,5 +1,5 @@
 /*
-GPT-5 GENERATED CODE. NOT VERIFIED. 
+TODO: expand
 */
 
 #include<stdio.h>

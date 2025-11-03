@@ -34,3 +34,8 @@ add_executable("DSA-Stack-Part2" "DSE2131-DSA_Lab/Lab7-Stack-Part2/Lab7-Stack-Pa
 
 add_executable("DSA-Queue-Array-Part2-1" "DSE2131-DSA_Lab/Lab9-Queue/Part 2-Using Linked List/Lab9-Queue-Using Linked List-1.c")
 add_executable("DSA-Queue-Array-Part2-2" "DSE2131-DSA_Lab/Lab9-Queue/Part 2-Using Linked List/Lab9-Queue-Using Linked List-2.c")
+
+add_executable("DSA-Tree-1" "DSE2131-DSA_Lab/Lab10-Tree/Lab10-Tree-1.c")
+add_executable("DSA-Tree-2" "DSE2131-DSA_Lab/Lab10-Tree/Lab10-Tree-2.c")
+
+add_executable("DSA-Infix_to_postfix" "DSE2131-DSA_Lab/LabX-Infix_to_Postfix/LabX-Infix_to_Postfix.c")
